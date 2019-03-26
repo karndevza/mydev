@@ -1,8 +1,8 @@
  <?php
   
-
+   // Channel access token (long-lived) 
 function send_LINE($msg){
- $access_token = 'qLip9omRdSnsaKFlsWmCCx9pdvAcRd1CGb6XfH/K3aKVgmHS4Eh/a35I8S1q8XVCZQVJUVIPa2B/c1ZJHfEyA8vUgqlUeIfqTkw607IKQ7yCasUHW34wj+CGzB6bOafYNDSGkh87GIr+Tns7fqFqVAdB04t89/1O/w1cDnyilFU='; 
+ $access_token = 'EPdYLxLxfTdrNal8Y/a3ihGIXvD6Ky8NmiJPuCsuyYrZiLUwB5bPiLBj6KYEcQPGEzJ7dJbnwI8Bscjama6bmGhveZW+507g2YGKNm7d4N/+ee5ESR8i6ZGdISsP6aEuSJdKHmQUkwrDExNCjCYocAdB04t89/1O/w1cDnyilFU='; 
 
   $messages = [
         'type' => 'text',
@@ -14,7 +14,8 @@ function send_LINE($msg){
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
 
-        'to' => 'Ue77a191627f6ac91899e75d92264310c',
+        'to' => 'U887d30ecc9afe44ad80ecc2d12897f66',  // LINE Your user ID
+       
         'messages' => [$messages],
       ];
       $post = json_encode($data);
