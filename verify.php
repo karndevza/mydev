@@ -1,5 +1,6 @@
 <?php
-$access_token = 'qLip9omRdSnsaKFlsWmCCx9pdvAcRd1CGb6XfH/K3aKVgmHS4Eh/a35I8S1q8XVCZQVJUVIPa2B/c1ZJHfEyA8vUgqlUeIfqTkw607IKQ7yCasUHW34wj+CGzB6bOafYNDSGkh87GIr+Tns7fqFqVAdB04t89/1O/w1cDnyilFU=';
+//Channel access token (long-lived) 
+$access_token = 'EPdYLxLxfTdrNal8Y/a3ihGIXvD6Ky8NmiJPuCsuyYrZiLUwB5bPiLBj6KYEcQPGEzJ7dJbnwI8Bscjama6bmGhveZW+507g2YGKNm7d4N/+ee5ESR8i6ZGdISsP6aEuSJdKHmQUkwrDExNCjCYocAdB04t89/1O/w1cDnyilFU=';
 
 $url = 'https://api.line.me/v1/oauth/verify';
 
@@ -13,3 +14,4 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 echo $result;
+?>
